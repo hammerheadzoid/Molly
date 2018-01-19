@@ -1,0 +1,118 @@
+To Do:
+=======
+	09)	Ghost on inception, should have random speeds.
+	15) When the sun sets, the intensity should drop to zero again, this makes a convencing day and night... 
+		it will look great with headlights from the car on it...
+	17)	The piece of code that regulates the speed of the rising and dropping of the intensity of the sun is not timed correctly. 
+	23)	Create different game modes, Kid Mode and Spawn Mode. When the basic game is finished the following games should be implemented. 
+		Kid Mode:	Smaller kids, Lucy, Riain and Fa have played Molly and have all found it scary. It would be nice if there was a nice kid 
+		friendly version of the game that they could play. 
+		Spawn Mode:	Cairbre played this mode, rather invented it, after he played Molly for a while. The idea is that the number of days is used 
+		to multiply by some number like 100 or something so that on day one you fight 100 zombies, day 2 you fight 200 etc. But to compensate for this you 
+		need to have thousands of rounds of ammo.
+	24)	Add a shop so that items can be bought. Male coin drops as well. 
+	25) Have the following items in the shop:
+			1: Magnet to pull coins towards you. 
+			2: Magnet to pull health towards you. 
+			3: Magnet to pull ammo towards you. 
+			4: Add a cross hair to your gun
+	26)	Fix the end of the game where Molly goes straight into a new game when she dies.
+	27)	Molly should be able to jump through windows. Make this so in the houses.
+	28) There should be different types of ghosts. When a zombie spawns it should be randomly allocated one of these types
+			1: Big slow ones that take a few shots to kill. 
+			2: Small quick ones that are easy to kill. 
+			3: Screamers that throw themselves at you and you can possibly kill them but they move so fast
+	29) Zombies should move in a more zig zag manner. 
+	30) When you dies it is very punishing on a player that he should have to redo the whole level again. Read - they will not do it agian. 
+		Instead the following should happen, every 5 levels you level record should be stored. When you die you will not be given the chance to reload. 
+		If you reload you will load up to the previous level that is a multiple of 5. ie - die at 27 start again at 25
+	31)	Fix the sun and the moon. When they hit a trigger that they turn off, then on. Should actually be really simple for what would yeald great results
+	32)	Count things like zombies killed. Shots taken in this game and in total... pointless but cool stats
+	33) Introduce story element into the game... as molly progresses she might get keys that would explain 
+	34) Introduce sounds into the game:
+			1: When a zombie is approaching. 
+			2: When you pic up something
+			3: When you are being hurt
+			4: Sound of the wind
+
+Done
+====
+	01)	Kill ghost with gun - There is pretty much a tutorial on this by unity itself at https://unity3d.com/learn/tutorials/topics/scripting/instantiate.
+	02)	Make ghosts appear at random spawn points, and number of ghosts to appear depends on level. 
+	03)	The camera has to be raised on the top down view.
+	04)	Change the area of effect that the ghosts have to be alot bigger... also it needs to be made into a 
+		trigger as opposed to the "physical" box collider that it has at the moment. 
+	05)	Tidy up the map a little, things that are meant to be physical should be physical, the terraced houses etc, and make a perimeter around the map, 
+		anything for now, maybe more of the fence actually, that could add to the fact that this is a military zone or something.
+	06)	Make Molly slower.
+	07)	Molly should have a stamina bar - Okay, she does not have a bar but it does give a nice clean percent.
+	08) Make ghosts faster.
+	10)	Give the car proper acceleration and weight... proper physics.
+	11)	Give Molly propper weight.
+	12)	Molly should be able to run using shift, otherwise walk..	13)	Fix that bloody annoying "Do you want to enter" dialogue!
+	14)	Fix the intensity of the sun. When the sun is at its zenith the intensity should be up at like, 3 or something. 
+
+
+Scrap Idea
+==========
+	16) To stop the car flying in the air I can put rays on it to see if all 4 of the tires are above a certain height then that means that the car is flying - 
+		put a timer on it or something so that the car begins to fall straight away - This was fixed by simply adding more gravity to the world in Project Settings.
+			18) Molly should be able to Jump... made this in a tutorial with Cairbre, should be easy enough to do really. 
+	19)	Mollys car should be entered when the person hits "F" and when they are within the trigger zone of the car. 
+	20) Mollys car should be only able to drive when both of the from wheels are touching something. This way when the car has 
+		flipped, the acceleration should stop too. 
+	21)	Change the propulsion of the car to "when 'W' is pressed that x force is added to the object". This should make the drive more realistic.
+	22) Move gun up and down on Axis of mouse... https://www.youtube.com/watch?v=XZAxgH1dqXw
+
+	
+Bug List:
+==========
+
+
+
+
+
+
+Diary
+=====
+21:20 30/10/2017
+I can't believe it! I have actually gotten a zombie/ghost/other thing to follow me! It works amazingly and it is really creepy... 
+I can't imagine what it would be like to have a few of them following you and even at different speeds. Really creepy stuff, 
+what is amazing is how easy the whole thing was. I have made the decision to that I will officially have it where one will spawn on night one, 
+two will spawn on night two 3 on night three etc. But at the moment, I am delighted. They will spawn at random spawn points. 
+
+07:44 01/11/2017
+Nice and early in the morning. I hear the kids walking around but I will try to get some stuff done here before the come in. 
+What I would like to do is to set the ghost.. well wait, there are two things that I should be able to do... first is, 
+I have to be able to kill the ghosts, so I guess it would be a good idea if Molly was able to kill them sooner rather than later... 
+also I would like them to be able to appear as per there level. A few more things. There box collision zone should be alot bigger, 
+as in when Molly even gets in contact with them, like near them, it should make her sick. She should have a gun or something too to kill them. 
+How is she going to kill these things. I think the simple answer with a gun is good, but the gun should only have a certain range. Also, finally, Sophie asked that the camera be higher up. 
+
+When playtesting the game yesterday with Sophie and Lucy I realised two huge problems, Molly was simply able to run away from the ghosts, 
+this is because Molly was really fast and the agents where getting stuck in some of the terrain and were not fast enough to get Molly in general. 
+	
+	01)	Kill ghost with gun.
+	02)	Make ghosts appear at random spawn points, and number of ghosts to appear depends on level. 
+	03)	The camera has to be raised on the top down view.
+	04)	Change the area of effect that the ghosts have to be alot bigger... also it needs to be made into a trigger as opposed to the "physical" box collider that it has at the moment. 
+	05)	Tidy up the map a little, things that are meant to be physical should be physical, the terraced houses etc, and make a perimeter around the map, 
+		anything for now, maybe more of the fence actually, that could add to the fact that this is a military zone or something.
+	06)	Make Molly slower.
+	07)	Molly should have a stamina bar.
+	08) Make ghosts faster.
+	09)	Ghost on inception, should have random speeds.
+	10)	Give the car proper acceleration and weight... proper physics.
+	11)	Give Molly propper weight.
+	12)	Molly should be able to run using shift, otherwise walk.. 
+	13)	Fix that bloody annoying "Do you want to enter" dialogue!
+
+Just thought of the name for the game. "100 Nights Alone". On the morning of day 101 a door will appear on one of the buildings and once you walk in the door you finish the game!
+
+23:04 01/11/2017
+
+Well can you believe that. After all the time that I spent worring about fixing gravity, you know what the solution was? Simply turning up gravity in the project settings. Brilliant. 
+It was set of course at -9.81. I have set it to -47! Boom.. and it works a dream
+
+“Sound effects obtained from https://www.zapsplat.com”
+http://soundbible.com/about.php
